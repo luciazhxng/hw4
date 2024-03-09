@@ -9,7 +9,7 @@ using namespace std;
 int main(int argc, char *argv[])
 {
     // Binary Search Tree tests
-    BinarySearchTree<char,int> bt1;
+    // BinarySearchTree<char,int> bt1;
     // bt1.insert(std::make_pair('a',1));
     // bt1.insert(std::make_pair('b',2));
     // bt1.insert(std::make_pair('c',3));
@@ -20,19 +20,23 @@ int main(int argc, char *argv[])
     // bt1.insert(std::make_pair('b',5));
     // bt1.print();
 
-    BinarySearchTree<int,int> bt2;
-    bt2.insert(std::make_pair(8,1));
-    bt2.insert(std::make_pair(14,2));
-    bt2.insert(std::make_pair(10,6));
-    bt2.insert(std::make_pair(12,3));
-    bt2.insert(std::make_pair(6,3));
-    bt2.insert(std::make_pair(3,3));
-    bt2.insert(std::make_pair(4,3));
+    AVLTree<int,int> avl;
+    avl.insert(std::make_pair(10,4));
+    avl.insert(std::make_pair(14,2));
+    avl.insert(std::make_pair(12,6));
+    
+    avl.insert(std::make_pair(6,3));
+    // avl.insert(std::make_pair(3,3));
+    avl.print();
+    // avl.insert(std::make_pair(4,3));
 
 
-    bt2.print();
-    bt2.remove(12);
-    bt2.print();
+    // avl.print();
+    // avl.remove(10);
+    // avl.print();
+    avl.remove(14);
+    avl.print();
+    // bt2.print();
     // bt2.insert(std::make_pair(9,5));
     // bt2.print();
     // cout << "Binary Search Tree contents:" << endl;
